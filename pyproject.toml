@@ -1,0 +1,26 @@
+[project]
+name = "expense-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Venkatraman28", email = "adithyavenkat2002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "openai>=3.46.0",
+    "pydantic>=2.14.3",
+    "pydantic-settings>=2.16.2",
+    "python-telegram-bot>=22.8",
+    "pyyaml>=6.0.3",
+    "sqlalchemy>=2.1.8",
+    "tzdata>=2026.6",
+]
+
+[project.scripts]
+expense-bot = "expense_bot.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
